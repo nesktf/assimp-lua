@@ -56,8 +56,8 @@ end
 If you are using fennel
 ```fennel 
 (when (scene:has_meshes)
-  (let [koishi-at (. scene.mMeshes 0)]
-        name (ffi.string koishi_hat.mName.data koishi_hat.mName.length)
+  (let [koishi-hat (. scene.mMeshes 0)
+        name (ffi.string koishi-hat.mName.data koishi-hat.mName.length)]
     (print (string.format "Mesh name: %s\n" name))))
 ```
 
